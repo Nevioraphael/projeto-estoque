@@ -358,7 +358,7 @@ body {
 }
 	.title h1{font-size:18px}
 	.tabela th,.tabela td{padding:10px}
-}
+
 
 /* Toast notifications */
 .toast{position:fixed;top:24px;right:24px;padding:12px 16px;border-radius:10px;color:#fff;font-weight:600;box-shadow:0 8px 30px rgba(2,6,23,0.2);z-index:60;opacity:0;transform:translateY(-6px);animation:toast-in .18s ease forwards}
