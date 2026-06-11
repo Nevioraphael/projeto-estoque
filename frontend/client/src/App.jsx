@@ -11,11 +11,6 @@ function App() {
   const [editando, setEditando] = useState(null);
   const [toast, setToast] = useState(null);
 
-  // Buscar produtos ao carregar a página
-  useEffect(() => {
-    fetchProdutos();
-  }, []);
-
   const fetchProdutos = async () => {
     try {
       const response = await axios.get(API_URL);
@@ -24,6 +19,11 @@ function App() {
       console.error('Erro ao buscar produtos', error);
     }
   };
+
+  // Buscar produtos ao carregar a página
+  useEffect(() => {
+    fetchProdutos();
+  }, []);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
